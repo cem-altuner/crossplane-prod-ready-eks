@@ -1,11 +1,11 @@
-apiVersion: prodreadycluster/v1alpha1
+apiVersion: prodready.cluster/v1alpha1
 kind: ClusterClaim
 metadata:
-  name: team-1-eks
+  name: team-a-eks
   labels:
     cluster-owner: cem 
 spec:
-  id: team-1-eks
+  id: team-a-eks
   compositionSelector:
     matchLabels:
       provider: aws

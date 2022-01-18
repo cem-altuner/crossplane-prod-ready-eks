@@ -1,13 +1,13 @@
 apiVersion: apiextensions.crossplane.io/v1
 kind: CompositeResourceDefinition
 metadata:
-  name: compositeclusters.prodreadycluster
+  name: compositeclusters.prodready.cluster
 spec:
   connectionSecretKeys:
   - kubeconfig
   defaultCompositionRef:
     name: cluster-aws
-  group: prodreadycluster
+  group: prodready.cluster
   names:
     kind: CompositeCluster
     plural: compositeclusters
