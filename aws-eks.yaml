@@ -1,0 +1,15 @@
+apiVersion: prodreadycluster/v1alpha1
+kind: ClusterClaim
+metadata:
+  name: team-1-eks
+  labels:
+    cluster-owner: cem 
+spec:
+  id: team-1-eks
+  compositionSelector:
+    matchLabels:
+      provider: aws
+      cluster: eks
+  parameters:
+    nodeSize: small
+    minNodeCount: 3

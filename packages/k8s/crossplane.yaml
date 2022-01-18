@@ -1,0 +1,12 @@
+apiVersion: meta.pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: k8s
+spec:
+  crossplane:
+    version: ">=v1.6"
+  dependsOn:
+  - provider: crossplane/provider-aws
+    version: v0.22.0
+  - provider: crossplane/provider-helm
+    version: v0.9.0
