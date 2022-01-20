@@ -12,7 +12,7 @@ The figure below provides an overview of the configuration of the demo.
 
 <img src="./Assets/conf.png">
 
-I am going to create a namespaces `crossplane-system` and `team-a` with the following command:
+First create a namespaces `crossplane-system` and `team-a` with the following command:
 
 After creating the "crossplane-system" namespace, write your AWS credentials to `aws-creds.conf` file and create a secret with the following command.
 ```
